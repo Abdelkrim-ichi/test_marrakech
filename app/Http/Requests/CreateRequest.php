@@ -25,9 +25,9 @@ class CreateRequest extends FormRequest
     {
         return [
             'name'      => 'string|required|max:100',
-            'lastname'  => 'string|required|max:100',
-            'address'   => 'string|max:250',
-            'phone'     => 'string|max:25',
+            'lastname'  => 'required|max:100',
+            'address'   => 'max:250',
+            'phone'     => 'max:25',
         ];
     }
 
